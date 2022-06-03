@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    font-family: "Merriweather Sans", sans-serif;
+    color: white;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.heading{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(10, 10, 10);
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    right: 80px;
+    top: 80%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1px);
+    overflow: hidden;
+    padding: 3px;
+}
+
+.search-input>input {
+    font-size: 25px;
+    width: 280px;
+    padding: 5px 7px;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+}
+
+.search-input>input::placeholder {
+    color: white;
+}
+
+.search-button {
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-right: 10px;
+    transition: .5s ease-in-out !important;
+}
+
+.search-button:hover {
+    transform: scale(1.4);
+}
+
+.weather-container>h2 {
+    position: absolute;
+    font-size: 60px;
+    left: 73px;
+    top: 77%;
+}
+
+.top-part {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    left: 73px;
+    top: 60%;
+}
+
+.top-part>h1 {
+    font-size: 90px;
+}
+
+.condition-high-low {
+    margin-left: 25px;
+}
+
+.condition-high-low>h1:nth-of-type(1) {
+    font-size: 32px;
+}
+
+.condition-high-low>h1:nth-of-type(2),
+h1:nth-of-type(3) {
+    font-size: 20px;
+}
+
+.errorTx {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    left: 73px;
+    top: 60%;
+    font-size: 60px;
+}
